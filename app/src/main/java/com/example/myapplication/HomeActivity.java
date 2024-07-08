@@ -12,6 +12,8 @@ import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
+
+
 public class HomeActivity extends AppCompatActivity {
 
     private SharedPreferences sharedPreferences;
@@ -32,6 +34,7 @@ public class HomeActivity extends AppCompatActivity {
 
         Button btnProduct = findViewById(R.id.btn_product);
         Button btnAccount = findViewById(R.id.btn_account);
+        Button btnLogout = findViewById(R.id.btn_logout);
 
         btnProduct.setOnClickListener(v -> {
             Intent intent = new Intent(HomeActivity.this, ProductActivity.class);
@@ -47,6 +50,19 @@ public class HomeActivity extends AppCompatActivity {
                 intent = new Intent(HomeActivity.this, EnterPasswordActtivity.class);
             }
             startActivity(intent);
+        });
+
+        btnLogout.setOnClickListener(v -> {
+
+            SharedPreferences.Editor editor = sharedPreferences.edit();
+            editor.clear();
+            editor.apply();
+
+
+            Intent intent = new Intent(HomeActivity.this, LogoutActivity.class);
+            intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+            startActivity(intent);
+            finish();
         });
     }
 }

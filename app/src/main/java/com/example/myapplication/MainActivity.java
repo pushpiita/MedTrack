@@ -44,23 +44,20 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(MainActivity.this, "Please enter all the fields", Toast.LENGTH_SHORT).show();
             }else{
 
-                if(username.equals("admin") && password.equals("admin")){
-                    Intent intent = new Intent(MainActivity.this, HomeActivity.class); // Assuming HomeActivity is the activity after login
-                    startActivity(intent);
-                }
-                else {
+
+
                     DatabaseHelper dbHelper = new DatabaseHelper(MainActivity.this);
                     boolean result = dbHelper.checkUserByUsername(username, password);
                     if(result){
-                        Toast.makeText(MainActivity.this, "Welcome valid user!!", Toast.LENGTH_SHORT).show();
-                        Intent intent = new Intent(MainActivity.this, HomeActivity.class); // Assuming HomeActivity is the activity after login
+
+                        Intent intent = new Intent(MainActivity.this, HomeActivity.class);
                         startActivity(intent);
                     }else{
-                        Toast.makeText(MainActivity.this, "Invalid Username and password!", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(MainActivity.this, "Invalid EmailName Or/And Password!", Toast.LENGTH_SHORT).show();
 
                     }
                 }
-            }
+
         });
 
 

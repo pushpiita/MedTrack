@@ -41,4 +41,7 @@
     <string name="enter">Enter</string>
     <string name="set_password">Set Password</string>
     <string name="btn_set_password">Set Password</string>
+    <string name="logout">Logout</string>
+    <string name="are_you_sure_you_want_to_logout">Are you sure you want to logout?</string>
+    <string name="string_logout">Logout</string>
 </resources>
