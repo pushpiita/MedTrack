@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/edt_product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/product_name"
+        android:layout_marginBottom="8dp"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/edt_buying_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/buying_price"
+        android:layout_marginBottom="8dp"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/edt_selling_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/selling_price"
+        android:layout_marginBottom="8dp"
+        android:inputType="numberDecimal"/>
+
+    <EditText
+        android:id="@+id/edt_quantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/quantity"
+        android:layout_marginBottom="8dp"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/edt_company_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/company_name"
+        android:layout_marginBottom="8dp"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/edt_expired_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/expired_date"
+        android:layout_marginBottom="8dp"
+        android:inputType="date"/>
+
+    <EditText
+        android:id="@+id/edt_buying_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/buying_date"
+        android:layout_marginBottom="16dp"
+        android:inputType="date"/>
+
+    <Button
+        android:id="@+id/btn_insert"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/insert"/>
+
+</LinearLayout>
+

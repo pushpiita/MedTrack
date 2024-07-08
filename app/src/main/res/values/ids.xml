@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btn_rregister" type="id" />
+    <item name="tvProductName" type="id" />
+    <item name="tvSellingPrice" type="id" />
+    <item name="tvQuantity" type="id" />
+    <item name="etSellQuantity" type="id" />
+    <item name="btnSell" type="id" />
+    <item name="tvCurrentQuantity" type="id" />
+    <item name="etQuantityToSell" type="id" />
+    <item name="btnConfirmSell" type="id" />
+</resources>

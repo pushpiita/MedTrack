@@ -1,0 +1,77 @@
+<!-- activity_view_delete_update.xml -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Search Product Name"/>
+
+    <Button
+        android:id="@+id/btnSearch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/etSearch"
+        android:text="Search"/>
+
+    <TextView
+        android:id="@+id/tvProductName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSearch"
+        android:paddingTop="16dp"/>
+
+    <TextView
+        android:id="@+id/tvBuyingPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvProductName"
+        android:paddingTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvSellingPrice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvBuyingPrice"
+        android:paddingTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvQuantity"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvSellingPrice"
+        android:paddingTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvCompanyName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvQuantity"
+        android:paddingTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvExpiredDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvCompanyName"
+        android:paddingTop="8dp"/>
+
+    <TextView
+        android:id="@+id/tvBuyingDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvExpiredDate"
+        android:paddingTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnSell"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvBuyingDate"
+        android:text="@string/sell_product"/>
+
+
+</RelativeLayout>
